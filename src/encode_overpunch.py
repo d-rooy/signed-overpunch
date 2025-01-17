@@ -3,6 +3,7 @@ from pyspark.sql import SparkSession
 from pyspark.sql.functions import udf
 from pyspark.sql.types import FloatType
 import random  # Import random module
+import pandas
 
 # Initialize SparkSession
 spark = SparkSession.builder.master("local[*]").appName("OverpunchDecoderTest").getOrCreate()
